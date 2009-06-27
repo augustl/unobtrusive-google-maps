@@ -53,7 +53,7 @@
     var self = this;
     
     this.targetElement = $(targetElement);
-    this.targetElement.click(function(){
+    this.targetElement.mousedown(function(){
       self.loadInteractiveMap();
       return false;
     });
