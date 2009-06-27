@@ -10,6 +10,10 @@
 	
 --~~ Usage ~~--
 
+	Download the javascript: http://github.com/augustl/unobtrusive-google-maps/raw/master/unobtrusive-google-maps.jquery.js
+	
+	Include the javascript on your page.
+
 	In your HTML (without the line break slashes):
 
 <img src="http://maps.google.com/staticmap?center=40.714728,-73.998672\
