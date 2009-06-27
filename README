@@ -1,0 +1,31 @@
+
+--~~ Unobtrusive Google Maps ~~--
+
+
+	Loads interactive Google maps when a static JPEG map
+	is clicked. The static map is replaced with a div. The
+	div is filled with a regular interactive Google map.
+	
+	
+	
+--~~ Usage ~~--
+
+	In your HTML (without the line break slashes):
+
+<img src="http://maps.google.com/staticmap?center=40.714728,-73.998672\
+&zoom=13&size=500x300&maptype=mobile&markers=40.714728,-73.998672\
+&sensor=false" class="static_map" />
+
+	In your javascripts:
+	
+$(".static_map").unobtrusiveGoogleMaps();
+
+
+--~~ Why? ~~--
+
+	You want your page to load fast. So you use static maps. You
+	don't need dynamic and interactive maps until a user actually
+	clicks the map, and loading the entire Google maps stack when
+	your page loads makes your page slower. What if the user didn't
+	want to click your Google map at all? He just spent all that
+	time loading Google maps for nothing.
