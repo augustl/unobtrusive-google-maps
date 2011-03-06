@@ -74,7 +74,7 @@
       var options = {}
       var queryParameters = {};
       $.each(/\?(.+)/.exec(src)[1].split("&"), function(i, x) {
-        var r = x.split("="); queryParameters[r[0]] = r[1];
+        var r = x.split("="); queryParameters[unescape(r[0])] = unescape(r[1]);
       });
       
       options.zoom = parseInt(queryParameters["zoom"]);
